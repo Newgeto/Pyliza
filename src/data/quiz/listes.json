@@ -1,0 +1,37 @@
+{
+  "topic": "listes",
+  "theme": "python",
+  "mode": "free-text",
+  "instructions": "Reponds librement. Plusieurs formulations peuvent etre acceptees.",
+  "normalization": {
+    "ignoreCase": true,
+    "ignoreAccents": true,
+    "trimSpaces": true
+  },
+  "questions": [
+    {
+      "id": "py-list-1",
+      "question": "Quel type Python utilise-t-on pour stocker plusieurs elements ordonnes ?",
+      "acceptedAnswers": ["list", "liste"],
+      "explanation": "Le type de base pour une liste est 'list'."
+    },
+    {
+      "id": "py-list-2",
+      "question": "A quel index se trouve le premier element d'une liste en Python ?",
+      "acceptedAnswers": ["0", "zero"],
+      "explanation": "Les index Python commencent a 0."
+    },
+    {
+      "id": "py-list-3",
+      "question": "Quelle methode ajoute un element a la fin d'une liste ?",
+      "acceptedAnswers": ["append", "append()"],
+      "explanation": "La methode append ajoute un element en fin de liste."
+    },
+    {
+      "id": "py-list-4",
+      "question": "Quelle fonction renvoie la taille d'une liste ?",
+      "acceptedAnswers": ["len", "len()"],
+      "explanation": "La fonction len renvoie le nombre d'elements."
+    }
+  ]
+}

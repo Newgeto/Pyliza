@@ -1,0 +1,37 @@
+{
+  "topic": "variables",
+  "theme": "python",
+  "mode": "free-text",
+  "instructions": "Reponds librement. Plusieurs formulations peuvent etre acceptees.",
+  "normalization": {
+    "ignoreCase": true,
+    "ignoreAccents": true,
+    "trimSpaces": true
+  },
+  "questions": [
+    {
+      "id": "py-var-1",
+      "question": "En Python, quel symbole utilise-t-on pour affecter une valeur a une variable ?",
+      "acceptedAnswers": ["=", "signe egal", "egal"],
+      "explanation": "En Python, l'affectation se fait avec '='."
+    },
+    {
+      "id": "py-var-2",
+      "question": "Donne un exemple valide de nom de variable en snake_case.",
+      "acceptedAnswers": ["age_utilisateur", "nom_utilisateur", "score_total", "nombre_etudiants"],
+      "explanation": "Le snake_case utilise des mots en minuscules separes par des underscores."
+    },
+    {
+      "id": "py-var-3",
+      "question": "Quel type de valeur est 3.14 en Python ?",
+      "acceptedAnswers": ["float", "nombre decimal", "decimal"],
+      "explanation": "3.14 est un nombre a virgule flottante, donc un float."
+    },
+    {
+      "id": "py-var-4",
+      "question": "Le nom de variable '2age' est-il valide en Python ? (oui/non)",
+      "acceptedAnswers": ["non", "no"],
+      "explanation": "Un identifiant Python ne peut pas commencer par un chiffre."
+    }
+  ]
+}

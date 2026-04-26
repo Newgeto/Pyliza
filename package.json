@@ -1,0 +1,14 @@
+{
+  "name": "pyliza",
+  "version": "1.0.0",
+  "description": "Bot Discord pour apprendre Python avec des tutoriels, quiz et assistance IA avec Ollama",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "node src/utils/loader.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "topic": "variables",
+  "theme": "python",
+  "title": "Variables en Python",
+  "level": "debutant",
+  "estimatedMinutes": 8,
+  "sections": [
+    {
+      "id": "definition",
+      "title": "A quoi sert une variable ?",
+      "content": "Une variable permet de stocker une valeur pour la reutiliser dans le programme."
+    },
+    {
+      "id": "affectation",
+      "title": "Affectation en Python",
+      "content": "En Python, on cree une variable avec '=' sans mot-cle particulier.",
+      "examples": [
+        "age = 19",
+        "nom_bot = 'Eliza'"
+      ]
+    },
+    {
+      "id": "bonnes-pratiques",
+      "title": "Bonnes pratiques",
+      "content": "Utiliser des noms explicites (snake_case) et eviter les noms ambigus."
+    }
+  ],
+  "summary": "Une variable en Python se cree directement avec '=' et doit avoir un nom clair."
+}

@@ -1,0 +1,39 @@
+{
+  "topic": "boucles",
+  "theme": "python",
+  "title": "Boucles en Python",
+  "level": "debutant",
+  "estimatedMinutes": 9,
+  "sections": [
+    {
+      "id": "pourquoi",
+      "title": "Pourquoi utiliser une boucle ?",
+      "content": "Une boucle permet de repeter une action sans recopier le meme code plusieurs fois."
+    },
+    {
+      "id": "for",
+      "title": "Boucle for",
+      "content": "La boucle for parcourt une sequence (liste, chaine, range, etc.).",
+      "examples": [
+        "for i in range(3):",
+        "    print(i)"
+      ]
+    },
+    {
+      "id": "while",
+      "title": "Boucle while",
+      "content": "La boucle while execute un bloc tant qu'une condition reste vraie.",
+      "examples": [
+        "compteur = 0",
+        "while compteur < 3:",
+        "    compteur += 1"
+      ]
+    },
+    {
+      "id": "attention",
+      "title": "Point de vigilance",
+      "content": "Verifier la condition d'arret pour eviter les boucles infinies."
+    }
+  ],
+  "summary": "Utilise for pour parcourir une sequence et while pour repeter selon une condition."
+}

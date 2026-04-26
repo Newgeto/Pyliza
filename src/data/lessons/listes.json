@@ -1,0 +1,43 @@
+{
+  "topic": "listes",
+  "theme": "python",
+  "title": "Listes en Python",
+  "level": "debutant",
+  "estimatedMinutes": 10,
+  "sections": [
+    {
+      "id": "definition",
+      "title": "Qu'est-ce qu'une liste ?",
+      "content": "Une liste est une collection ordonnee d'elements, modifiable, entouree de crochets."
+    },
+    {
+      "id": "creation-acces",
+      "title": "Creation et acces",
+      "content": "On cree une liste avec [] et on accede aux elements par index, en commencant a 0.",
+      "examples": [
+        "notes = [12, 15, 9]",
+        "premiere_note = notes[0]"
+      ]
+    },
+    {
+      "id": "operations-courantes",
+      "title": "Operations courantes",
+      "content": "append ajoute un element, remove supprime une valeur et len donne la taille.",
+      "examples": [
+        "notes.append(18)",
+        "notes.remove(9)",
+        "taille = len(notes)"
+      ]
+    },
+    {
+      "id": "parcours",
+      "title": "Parcourir une liste",
+      "content": "On parcourt souvent une liste avec une boucle for.",
+      "examples": [
+        "for note in notes:",
+        "    print(note)"
+      ]
+    }
+  ],
+  "summary": "Les listes servent a stocker et manipuler plusieurs valeurs dans un ordre defini."
+}

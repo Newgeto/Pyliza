@@ -1,0 +1,43 @@
+{
+  "topic": "conditions",
+  "theme": "python",
+  "title": "Conditions en Python",
+  "level": "debutant",
+  "estimatedMinutes": 9,
+  "sections": [
+    {
+      "id": "if-else",
+      "title": "if / elif / else",
+      "content": "Les conditions permettent d'executer un bloc de code selon qu'une expression est vraie ou fausse.",
+      "examples": [
+        "note = 12",
+        "if note >= 10:",
+        "    print('Admis')",
+        "else:",
+        "    print('Ajourne')"
+      ]
+    },
+    {
+      "id": "operateurs",
+      "title": "Operateurs de comparaison",
+      "content": "Les operateurs ==, !=, <, <=, >, >= servent a comparer des valeurs."
+    },
+    {
+      "id": "operateurs-logiques",
+      "title": "and / or / not",
+      "content": "On combine plusieurs conditions avec and, or et not.",
+      "examples": [
+        "age = 20",
+        "a_le_code = True",
+        "if age >= 18 and a_le_code:",
+        "    print('Autorise a conduire')"
+      ]
+    },
+    {
+      "id": "bonnes-pratiques",
+      "title": "Bonnes pratiques",
+      "content": "Ecrire des conditions lisibles et eviter des blocs trop imbriques."
+    }
+  ],
+  "summary": "Les structures if/elif/else permettent de faire des choix dans un programme Python."
+}

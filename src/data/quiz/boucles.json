@@ -1,0 +1,37 @@
+{
+  "topic": "boucles",
+  "theme": "python",
+  "mode": "free-text",
+  "instructions": "Reponds librement. Plusieurs formulations peuvent etre acceptees.",
+  "normalization": {
+    "ignoreCase": true,
+    "ignoreAccents": true,
+    "trimSpaces": true
+  },
+  "questions": [
+    {
+      "id": "py-loop-1",
+      "question": "Quel mot-cle Python utilise-t-on pour parcourir une sequence ?",
+      "acceptedAnswers": ["for"],
+      "explanation": "La boucle for sert a parcourir une sequence comme une liste ou un range."
+    },
+    {
+      "id": "py-loop-2",
+      "question": "Dans range(5), combien de valeurs sont generees ?",
+      "acceptedAnswers": ["5", "cinq"],
+      "explanation": "range(5) genere 0, 1, 2, 3, 4, donc 5 valeurs."
+    },
+    {
+      "id": "py-loop-3",
+      "question": "Quel mot-cle permet de faire une boucle basee sur une condition ?",
+      "acceptedAnswers": ["while"],
+      "explanation": "while repete le bloc tant que la condition est vraie."
+    },
+    {
+      "id": "py-loop-4",
+      "question": "Quel risque principal existe avec while si la condition ne change jamais ?",
+      "acceptedAnswers": ["boucle infinie", "infinite loop", "boucle sans fin"],
+      "explanation": "Sans condition d'arret, la boucle peut tourner indefiniment."
+    }
+  ]
+}

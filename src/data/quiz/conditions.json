@@ -1,0 +1,37 @@
+{
+  "topic": "conditions",
+  "theme": "python",
+  "mode": "free-text",
+  "instructions": "Reponds librement. Plusieurs formulations peuvent etre acceptees.",
+  "normalization": {
+    "ignoreCase": true,
+    "ignoreAccents": true,
+    "trimSpaces": true
+  },
+  "questions": [
+    {
+      "id": "py-cond-1",
+      "question": "Quel mot-cle commence un test conditionnel en Python ?",
+      "acceptedAnswers": ["if"],
+      "explanation": "Un bloc conditionnel commence avec 'if'."
+    },
+    {
+      "id": "py-cond-2",
+      "question": "Quel mot-cle utilise-t-on pour tester un autre cas apres if ?",
+      "acceptedAnswers": ["elif", "else if"],
+      "explanation": "En Python, le mot-cle est 'elif'."
+    },
+    {
+      "id": "py-cond-3",
+      "question": "Quel operateur de comparaison verifie l'egalite en Python ?",
+      "acceptedAnswers": ["==", "double egal"],
+      "explanation": "L'egalite se teste avec '==', pas '='."
+    },
+    {
+      "id": "py-cond-4",
+      "question": "Quel operateur logique renvoie vrai seulement si les deux conditions sont vraies ?",
+      "acceptedAnswers": ["and"],
+      "explanation": "L'operateur 'and' exige que les deux conditions soient vraies."
+    }
+  ]
+}

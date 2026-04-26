@@ -1,0 +1,34 @@
+{
+  "topic": "fonctions",
+  "theme": "python",
+  "title": "Fonctions en Python",
+  "level": "debutant",
+  "estimatedMinutes": 10,
+  "sections": [
+    {
+      "id": "definition",
+      "title": "A quoi sert une fonction ?",
+      "content": "Une fonction permet de regrouper du code reutilisable sous un nom clair."
+    },
+    {
+      "id": "syntaxe",
+      "title": "Syntaxe de base",
+      "content": "En Python, on definit une fonction avec 'def', puis on peut la rappeler plus tard.",
+      "examples": [
+        "def saluer(nom):",
+        "    return f'Bonjour {nom}'"
+      ]
+    },
+    {
+      "id": "parametres-retour",
+      "title": "Parametres et return",
+      "content": "Les parametres servent d'entree et 'return' renvoie un resultat."
+    },
+    {
+      "id": "bonnes-pratiques",
+      "title": "Bonnes pratiques",
+      "content": "Donner un nom de fonction explicite et garder une fonction courte avec un seul objectif."
+    }
+  ],
+  "summary": "Les fonctions rendent le code plus lisible, reutilisable et plus facile a maintenir."
+}

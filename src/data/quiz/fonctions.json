@@ -1,0 +1,37 @@
+{
+  "topic": "fonctions",
+  "theme": "python",
+  "mode": "free-text",
+  "instructions": "Reponds librement. Plusieurs formulations peuvent etre acceptees.",
+  "normalization": {
+    "ignoreCase": true,
+    "ignoreAccents": true,
+    "trimSpaces": true
+  },
+  "questions": [
+    {
+      "id": "py-fn-1",
+      "question": "Quel mot-cle permet de definir une fonction en Python ?",
+      "acceptedAnswers": ["def"],
+      "explanation": "En Python, une fonction commence par le mot-cle 'def'."
+    },
+    {
+      "id": "py-fn-2",
+      "question": "Quel mot-cle permet de renvoyer une valeur depuis une fonction ?",
+      "acceptedAnswers": ["return"],
+      "explanation": "Le mot-cle 'return' renvoie un resultat au code appelant."
+    },
+    {
+      "id": "py-fn-3",
+      "question": "Comment appelle-t-on les valeurs entre parentheses dans def saluer(nom) ?",
+      "acceptedAnswers": ["parametres", "parametre", "arguments formels"],
+      "explanation": "Dans la definition, 'nom' est un parametre."
+    },
+    {
+      "id": "py-fn-4",
+      "question": "Donne un nom de fonction Python bien ecrit (snake_case).",
+      "acceptedAnswers": ["calculer_moyenne", "envoyer_message", "lire_fichier", "afficher_menu"],
+      "explanation": "Un bon nom est explicite et ecrit en snake_case."
+    }
+  ]
+}
