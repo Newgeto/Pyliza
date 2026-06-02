@@ -1,118 +1,123 @@
 # PyLiza
 
-Bot Discord pour apprendre Python avec des tutoriels, des quiz et une IA en local.
+Discord bot designed to help users learn Python through lessons, quizzes, and a local AI assistant.
 
-## A quoi ça sert
+## Overview
 
-PyLiza est un bot Discord qui aide à apprendre Python. Il combine des leçons structurées et une IA locale (Ollama avec Phi3 Mini) pour répondre à tes questions, t'expliquer des concepts et te proposer des quiz.
+PyLiza is a Discord bot that makes learning Python easier. It combines structured lessons with a local AI model (Ollama running Phi3 Mini) to answer questions, explain concepts, and generate quizzes.
 
-Tu peux l'utiliser directement sur Discord pour réviser, poser des questions ou t'entraîner.
+You can use it directly from Discord to study, ask questions, and practice your Python skills.
 
-## Les commandes
+## Commands
 
-- `/ask` : pose une question, le bot répond
-- `/lesson` : affiche une leçon sur un sujet (variables, fonctions, listes, boucles, conditions)
-- `/quiz` : lance un quiz pour tester tes connaissances
-- `/help` : affiche toutes les commandes
-- `/ping` : vérifie que le bot répond
+* `/ask` : ask a question and get an AI-generated answer
+* `/lesson` : display a lesson about a Python topic
+* `/quiz` : start a quiz to test your knowledge
+* `/help` : show all available commands
+* `/ping` : check if the bot is online
 
-## Les technologies
+## Tech Stack
 
-- Bot : Discord.js v14
-- IA locale : Ollama (Phi3 Mini)
-- Node.js 20
-- Docker + Docker Compose
-- Données : JSON
+* Discord.js v14
+* Ollama (Phi3 Mini)
+* Node.js 20+
+* Docker & Docker Compose
+* JSON data storage
 
-## Structure du projet
+## Project Structure
 
-```
+```text id="5bgh8v"
 ├── src/
 │   ├── index.js
-│   ├── commands/         (ask, lesson, quiz, help, ping)
-│   ├── events/           (gestion du bot)
-│   ├── llm/              (intégration Ollama)
-│   ├── config/           (configuration)
+│   ├── commands/         # ask, lesson, quiz, help, ping
+│   ├── events/           # Discord event handlers
+│   ├── llm/              # Ollama integration
+│   ├── config/           # Configuration files
 │   ├── data/
-│   │   ├── lessons/      (tutoriels JSON)
-│   │   └── quiz/         (questions JSON)
-│   └── utils/            (utilitaires)
+│   │   ├── lessons/      # JSON lessons
+│   │   └── quiz/         # JSON quiz questions
+│   └── utils/            # Utility functions
 ├── Dockerfile
 ├── docker-compose.yml
 ├── package.json
-└── .env.exemple
+└── .env.example
 ```
 
 ## Installation
 
-Avant de commencer, tu dois avoir :
-- Node.js 20 ou plus
-- Ollama en cours d'exécution
-- Un bot Discord créé sur https://discord.com/developers/applications
+Before getting started, make sure you have:
 
-Ensuite :
+* Node.js 20 or later
+* Ollama running locally
+* A Discord bot created in the Discord Developer Portal
 
-1. Clone le repo
-```bash
-git clone https://github.com/votre-username/pyliza.git
+### 1. Clone the repository
+
+```bash id="tq1kdr"
+git clone https://github.com/your-username/pyliza.git
 cd pyliza
 ```
 
-2. Installe les dépendances
-```bash
+### 2. Install dependencies
+
+```bash id="ijrb3z"
 npm install
 ```
 
-3. Crée un fichier `.env` à partir du `.env.exemple` et remplis tes infos Discord
-```bash
-cp .env.exemple .env
+### 3. Create the environment file
+
+```bash id="jz58j7"
+cp .env.example .env
 ```
 
-Remplis dans le fichier `.env` :
-- DISCORD_TOKEN (token de ton bot)
-- CLIENT_ID (ID de l'app)
-- GUILD_ID (ID du serveur Discord)
-- OLLAMA_HOST (http://localhost:11434 en local)
+Fill in the following values:
 
-4. Lance le bot
-```bash
+* `DISCORD_TOKEN` – your bot token
+* `CLIENT_ID` – your Discord application ID
+* `GUILD_ID` – your Discord server ID
+* `OLLAMA_HOST` – usually `http://localhost:11434`
+
+### 4. Start the bot
+
+```bash id="w73sne"
 npm start
 ```
 
-## Avec Docker
+## Docker
 
-Si tu préfères utiliser Docker :
+If you prefer using Docker:
 
-```bash
-docker-compose up --build
+```bash id="te0qzh"
+docker compose up --build
 ```
 
-Le bot démarre automatiquement avec Ollama.
+The bot will start automatically with Ollama.
 
-## Utilisation
+## Usage
 
-Une fois le bot lancé et invite sur ton serveur Discord, tu peux utiliser les commandes :
+Once the bot is running and invited to your Discord server, you can use:
 
-- `/ask question: pourquoi utiliser les listes?` - pose une question libre
-- `/lesson sujet: variables` - obtiens une leçon
-- `/quiz sujet: fonctions` - fais un quiz
-- `/help` - vois toutes les commandes
-- `/ping` - vérifie que le bot répond
+* `/ask question: Why should I use lists?`
+* `/lesson topic: variables`
+* `/quiz topic: functions`
+* `/help`
+* `/ping`
 
-## Les sujets disponibles
+## Available Topics
 
-Tu peux apprendre sur :
-- Variables
-- Fonctions
-- Listes
-- Boucles
-- Conditions
+Current lessons include:
 
-## Développement
+* Variables
+* Functions
+* Lists
+* Loops
+* Conditions
 
-Pour modifier le bot :
+## Development
 
-```bash
-npm run deploy    (redéploie les commandes)
-npm start         (redémarre le bot)
+Useful commands during development:
+
+```bash id="ry1l5n"
+npm run deploy   # Redeploy slash commands
+npm start        # Start the bot
 ```
