@@ -1,7 +1,7 @@
 const { REST, Routes } = require('discord.js');
 const fs = require('fs');
 const path = require('path');
-const { token, clientId, guildId } = require('../config/config');
+const { token } = require('../config/config');
 
 // Récupération de toutes les commandes du dossier commands
 const commands = [];
@@ -20,8 +20,11 @@ const rest = new REST().setToken(token);
 
 // Enregistre les slash commands auprès de Discord via l'API
 async function deployCommands() {
-  console.log(`Déploiement de ${commands.length} commande(s)...`);
-  await rest.put(Routes.applicationGuildCommands(clientId, guildId), { body: commands });
+  // Récupère l'ID de l'application directement à partir du token
+  const application = await rest.get(Routes.currentApplication());
+
+  console.log(`Déploiement global de ${commands.length} commande(s)...`);
+  await rest.put(Routes.applicationCommands(application.id), { body: commands });
   console.log('Commandes déployées avec succès.');
 }
 

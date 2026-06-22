@@ -3,5 +3,5 @@ WORKDIR /app
 COPY package.json ./
 RUN npm install --production
 COPY src/ ./src/
-COPY data/ ./data/
-CMD ["node", "src/index.js"]
+# Déploie les commandes puis démarre le bot
+CMD ["sh", "-c", "npm run deploy && npm start"]

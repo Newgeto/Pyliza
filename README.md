@@ -40,7 +40,7 @@ You can use it directly from Discord to study, ask questions, and practice your 
 ├── Dockerfile
 ├── docker-compose.yml
 ├── package.json
-└── .env.example
+└── .env.exemple
 ```
 
 ## Installation
@@ -67,17 +67,26 @@ npm install
 ### 3. Create the environment file
 
 ```bash id="jz58j7"
-cp .env.example .env
+cp .env.exemple .env
 ```
 
-Fill in the following values:
+Fill in the following value:
 
-* `DISCORD_TOKEN` – your bot token
-* `CLIENT_ID` – your Discord application ID
-* `GUILD_ID` – your Discord server ID
-* `OLLAMA_HOST` – usually `http://localhost:11434`
+* `DISCORD_TOKEN` – your bot token (the only required setting)
 
-### 4. Start the bot
+You can optionally override `OLLAMA_URL` (defaults to `http://localhost:11434`) if Ollama runs elsewhere.
+
+### 4. Deploy the slash commands
+
+The first time (and whenever you change a command), register the commands with Discord:
+
+```bash id="dep1st"
+npm run deploy
+```
+
+Commands are deployed globally, so no application or server ID is needed.
+
+### 5. Start the bot
 
 ```bash id="w73sne"
 npm start

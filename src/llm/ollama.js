@@ -1,5 +1,7 @@
 // adresse d'ollama, peut être changée dans le .env
-const OLLAMA_URL = process.env.OLLAMA_URL || 'http://localhost:11434';
+// on utilise 127.0.0.1 plutôt que localhost : sous Node, localhost peut se résoudre
+// en IPv6 (::1) alors qu'Ollama n'écoute qu'en IPv4, ce qui provoque ECONNREFUSED
+const OLLAMA_URL = process.env.OLLAMA_URL || 'http://127.0.0.1:11434';
 const MODEL = 'phi3:mini';
 
 // ce qu'on dit au modèle pour qu'il joue le rôle de pyliza
